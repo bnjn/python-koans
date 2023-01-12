@@ -2,6 +2,9 @@
 Python Koans
 ============
 
+This is my copy of the Python Koans from gregmalcolm.
+https://github.com/gregmalcolm/python_koans
+
 .. image:: https://travis-ci.org/gregmalcolm/python_koans.png?branch=master
    :target: http://travis-ci.org/gregmalcolm/python_koans
 
