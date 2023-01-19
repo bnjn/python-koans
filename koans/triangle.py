@@ -18,12 +18,20 @@
 #
 def triangle(a, b, c):
     uniq_sides = len(set([a, b, c]))
+    if any(side <= 0 for side in [a, b, c]):
+      raise TriangleError
+    if a + b < c:
+      raise TriangleError
+    elif b + c < a:
+      raise TriangleError
+    elif a + c < b:
+      raise TriangleError
     if uniq_sides == 1:
-        return 'equilateral'
+      return 'equilateral'
     elif uniq_sides == 2:
-        return 'isosceles'
+      return 'isosceles'
     else:
-        return 'scalene'
+      return 'scalene'
       
 
 # Error class used in part 2.  No need to change this code.
